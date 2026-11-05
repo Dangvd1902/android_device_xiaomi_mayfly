@@ -37,3 +37,29 @@ Base branch: fifteen. Do not flash artifacts until kernel/vendor compatibility a
 ```
 
 Do not sync this alongside existing projects at the same paths without first removing conflicts. This is an upstream mapping, not a validated build manifest.
+
+## Joshaby PixelOS 17 test-build notes (Telegram screenshots, user supplied)
+
+The screenshots show a **test build for Xiaomi 12 (cupid), not Xiaomi 12S (mayfly)**. These are reported features, not verified on mayfly:
+
+- PixelOS 17.0 / Android 17, GApps build, latest firmware (unspecified version).
+- PhoenyxCore v3 Test kernel 5.10.269.
+- KernelSU Next v3.4.2 (33445-6), SuSFS v2.3.0, KPatch Next, Mountify, BBG, Wild KSU optimizations, Droidspace, NTSync, IPSet, BBR, NoMount v2, Fuse-BPF, Vorpal Governor, NTFS3, EEVDF-BORE.
+- GPU driver 863.1, Vulkan 1.3.295 (reported source: RayBan Meta).
+- MIUI Camera with Leica mod by acerhizm (reported Poco F5 / marble port).
+- XiaomiParts thermal profiles, PowerTools, display saturation, Clear Speaker, KProfiles.
+- AOSPA Dolby / LunarisDolby, Dolby Vision, high touch polling rate, battery/RAM/interface tuning.
+- Reported kernel version string spoofing for GMS is not a device compatibility guarantee.
+
+### Integration decisions
+
+1. Prioritize stock-compatible mayfly camera, firmware, fingerprint, display, NFC, and brightness first. Do **not** transplant the cupid/marble camera stack blindly.
+2. Treat PhoenyxCore v3 and GPU 863.1 as **candidate targets**, not validated components; verify source revision, ABI, kernel modules, DTBs and vendor matching.
+3. Keep root modifications (KernelSU/SuSFS etc.) optional and outside the initial bootable baseline.
+4. Confirm Dolby/Vision dependencies and licensing before inclusion.
+5. Confirm actual PixelOS 17 product naming against current PixelOS source; official build example uses `custom_codename-cp2a-userdebug` and `m pixelos`.
+6. Obtain the complete Telegram test-build header, exact source commits, and mayfly-specific vendor sources before claiming reproducibility.
+
+Sources: https://blog.pixelos.net/blogs/2026-08-18-August-Update/ ; https://blog.pixelos.net/changelogs/
+
+**Status:** integration plan updated; device source not merged; no successful build or device test claimed.
