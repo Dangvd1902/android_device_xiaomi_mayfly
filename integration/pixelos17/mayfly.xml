@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Staging manifest. Requires a matching mayfly vendor source and kernel validation. -->
+<manifest>
+  <remote name="mayfly-github" fetch="https://github.com/" />
+  <project name="LineageOS/android_device_xiaomi_mayfly" path="device/xiaomi/mayfly" remote="mayfly-github" revision="lineage-24.0" />
+  <project name="Joshabys-Xiaomi-12-Org/android_device_xiaomi_sm8450-common" path="device/xiaomi/sm8450-common" remote="mayfly-github" revision="266e1173318148dc5374d7f4b5a766c0f8565e1a" />
+  <project name="Joshabys-Xiaomi-12-Org/proprietary_vendor_xiaomi_sm8450-common" path="vendor/xiaomi/sm8450-common" remote="mayfly-github" revision="eb0c69356adb82ca6de20c092c7353c7660bd704" />
+  <project name="Joshabys-Xiaomi-12-Org/android_kernel_xiaomi_sm8450" path="kernel/xiaomi/sm8450" remote="mayfly-github" revision="c5852855a1c3a4f6370385a95bd05309397bfd18" />
+  <project name="LineageOS/android_kernel_xiaomi_sm8450-modules" path="kernel/xiaomi/sm8450-modules" remote="mayfly-github" revision="lineage-24.0" />
+</manifest>
