@@ -44,3 +44,6 @@ $(call soong_config_set_bool,qti_vibrator,use_effect_stream,true)
 
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/mayfly/mayfly-vendor.mk)
+
+# Inherit MiuiCamera
+$(call inherit-product-if-exists, device/xiaomi/miuicamera-mayfly/device.mk)
