@@ -26,3 +26,16 @@ PRODUCT_ENFORCE_PACKAGES_EXIST := false
 PRODUCT_ENFORCE_PACKAGES_EXIST_ALLOW_LIST += \
     android.hardware.thermal-service.qti \
     sound_trigger.primary.taro SimpleSettingsConfig
+
+# Leica Camera Integration Properties
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.product.mod_device=mayfly_global \
+    ro.miui.notch=1
+
+PRODUCT_VENDOR_PROPERTIES += \
+    camera.disable_zsl_mode=1 \
+    ro.camera.enableCamera1MaxZsl=1 \
+    ro.hardware.camera=xiaomi
+
+PRODUCT_ENFORCE_PACKAGES_EXIST_ALLOW_LIST += \
+    MiuiCamera MiuiCalculator
