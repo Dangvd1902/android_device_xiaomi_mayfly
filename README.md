@@ -23,3 +23,11 @@ Camera  | 50 MP wide, 13 MP ultrawide, 5 MP telephoto macro, 32 MP front
 
 ## Device picture
 ![Xiaomi Mi 12S](https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202207012022_19bbddb6b35c3828f8b53f450c1519a3.png "Xiaomi Mi 12S")
+
+---
+
+## ⚖️ Disclaimer (Tuyên Bố Miễn Trừ Trách Nhiệm)
+
+> [!WARNING]
+> - **Use at your own risk:** Custom ROM compilation, kernel modification, and partition flashing may void your device warranty or result in hardware bricking or data loss. The author assumes **NO responsibility** for any damages caused to your device.
+> - **Intellectual Property:** All proprietary blobs, device drivers, and firmware components belong to their respective owners (Xiaomi Inc., Qualcomm Technologies Inc.). This repository provides device trees for academic research, open-source development, and personal maintenance only.

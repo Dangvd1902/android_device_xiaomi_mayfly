@@ -25,4 +25,4 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 PRODUCT_ENFORCE_PACKAGES_EXIST := false
 PRODUCT_ENFORCE_PACKAGES_EXIST_ALLOW_LIST += \
     android.hardware.thermal-service.qti \
-    sound_trigger.primary.taro
+    sound_trigger.primary.taro SimpleSettingsConfig
