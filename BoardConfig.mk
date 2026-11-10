@@ -27,3 +27,6 @@ TARGET_RECOVERY_UI_MARGIN_HEIGHT := 100
 
 # Include proprietary files
 include vendor/xiaomi/mayfly/BoardConfigVendor.mk
+
+# MiuiCamera (Leica)
+-include device/xiaomi/miuicamera-mayfly/BoardConfig.mk

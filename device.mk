@@ -47,3 +47,6 @@ $(call inherit-product, vendor/xiaomi/mayfly/mayfly-vendor.mk)
 
 # Inherit MiuiCamera
 $(call inherit-product-if-exists, device/xiaomi/miuicamera-mayfly/device.mk)
+
+# GCam (BigKaka AGC 9.2)
+PRODUCT_PACKAGES += GCam
