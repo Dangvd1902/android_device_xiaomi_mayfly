@@ -21,9 +21,12 @@ PRODUCT_MODEL := 2206123SC
 PRODUCT_NAME := lineage_mayfly
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="mayfly-user 15 AQ3A.241006.001 OS2.0.204.0.VLTCNXM release-keys" \
-    BuildFingerprint=Xiaomi/mayfly/mayfly:15/AQ3A.241006.001/OS2.0.204.0.VLTCNXM:user/release-keys \
+    BuildDesc="mayfly-user 15 AQ3A.250107.001 OS3.0.3.0.VLTCNXM release-keys" \
+    BuildFingerprint=Xiaomi/mayfly/mayfly:15/AQ3A.250107.001/OS3.0.3.0.VLTCNXM:user/release-keys \
     DeviceProduct=mayfly \
     SystemName=mayfly
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
+PRODUCT_ENABLE_UFFD_GC := true
